@@ -12,6 +12,6 @@
   "description": "",
   "contributors": [],
   "scripts": {
-    "test": "node ./server.js & ./node_modules/.bin/nightwatch"
+    "test": "node ./server.js & ./node_modules/.bin/protractor conf.js"
   }
 }

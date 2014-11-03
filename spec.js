@@ -22,3 +22,10 @@ describe('angularjs homepage', function() {
     expect(history.last().getText()).toContain('1 + 2');
   });
 });
+
+describe('test local page', function() {
+  browser.get('');
+  it('should have the text hello world', function() {
+    expect(element(by.css('h1')).getText()).toEqual('Hello World');
+  })
+})
