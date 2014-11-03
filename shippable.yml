@@ -10,9 +10,7 @@ services:
   - selenium
 
 install:
-  - npm install istanbul
-  - npm install protractor
-  - npm install jasmine-reporters@1.0.0
+  - npm install
 
 before_script:
   - mkdir -p shippable/testresults
@@ -21,7 +19,6 @@ before_script:
   - "/etc/init.d/xvfb start"
 
 script:
-  - protractor --version
   - npm test
 
 after_script:
