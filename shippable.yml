@@ -10,8 +10,8 @@ services:
   - selenium
 
 install:
-  - npm install -g istanbul
-  - npm install -g protractor
+  - npm install istanbul
+  - npm install protractor
   - npm install jasmine-reporters@1.0.0
 
 before_script:
