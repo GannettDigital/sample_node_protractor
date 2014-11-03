@@ -24,8 +24,8 @@ describe('angularjs homepage', function() {
 });
 
 describe('test local page', function() {
-  browser.get('/');
+  browser.get('');
   it('should have the text hello world', function() {
-    expect(element(by.css('html h1')).getText()).toEqual('Hello World');
+    expect(element(by.css('html')).getText()).toContain('Hello World');
   })
 })
