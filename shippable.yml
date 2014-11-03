@@ -22,7 +22,7 @@ before_script:
 
 script:
   - protractor --version
-  - protractor conf.js
+  - npm test
 
 after_script:
   - "/etc/init.d/xvfb stop"
